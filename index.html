@@ -1,6 +1,9 @@
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+	integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
 	integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 	crossorigin="anonymous"></script>
@@ -21,22 +24,67 @@
 			<h1 class="display-3">
 				<center>Welcome to the <br>MarkHome Unraid Server!</center>
 			</h1>
-
-			<h1 class="display-4">
-				<hr style="border-top: 1px solid #000000" />
-				<a href="http://192.168.1.42:32400/web/index.html">Plex</a> <br>
-				<hr style="border-top: 1px solid #000000" />
-				<a href="http://netflix.markhome.xyz:7878">Radarr (Movies)</a> <br>
-				<a href="http://netflix.markhome.xyz:8989">Sonarr (TV Shows)</a> <br>
-				<hr style="border-top: 1px solid #000000" />
-				<a href="http://jollyroger.markhome.xyz:8085">SABnzbd (Usenet client)</a> <br>
-				<a href="http://jollyroger.markhome.xyz:8080">Deluge (Torrent client)</a> <br>
-				<hr style="border-top: 1px solid #000000" />
-				<a href="http://unraid.markhome.xyz:8880">DokuWiki</a> <br>
-			</h1>
 		</div>
-		<div>
-			index.html v2.0.3
-		</div>
+		<nav>
+			<div class="nav nav-tabs" id="nav-tab" role="tablist">
+				<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+					aria-controls="nav-home" aria-selected="true">Home</a>
+				<a class="nav-item nav-link" id="nav-debug-tab" data-toggle="tab" href="#nav-debug" role="tab"
+					aria-controls="nav-profile" aria-selected="false">Debug</a>
+				<a class="nav-item nav-link" id="nav-server-stuff-tab" data-toggle="tab" href="#nav-server-stuff"
+					role="tab" aria-controls="nav-profile" aria-selected="false">Server stuff</a>
+				<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+					aria-controls="nav-contact" aria-selected="false">Contact</a>
+			</div>
+		</nav>
+		<h1 class="display-4">
+			<div class="tab-content" id="nav-tabContent">
+				<!-- MAIN TAB -->
+				<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+					<a href="http://192.168.1.42:32400/web/index.html">Plex</a> <br>
+					<hr style="border-top: 1px solid #000000" />
+					<a href="https://netflix.com">Netflix</a> <br>
+					<hr style="border-top: 1px solid #000000" />
+					<a href="http://netflix.markhome.xyz:7878">Radarr (Movies)</a> <br>
+					<a href="http://netflix.markhome.xyz:8989">Sonarr (TV Shows)</a> <br>
+					<hr style="border-top: 1px solid #000000" />
+					<a href="http://unraid.markhome.xyz:8880">DokuWiki</a> <br>
+				</div>
+				<!-- CONTACT TAB -->
+				<div class="tab-pane fade" id="nav-debug" role="tabpanel" aria-labelledby="nav-debug-tab">
+					<a href="https://speedtest.net">Speedtest 1</a> <br>
+					<hr style="border-top: 1px solid #000000" />
+					<a href="https://fast.com">Speedtest 2</a> <br>
+					<hr style="border-top: 1px solid #000000" />
+				</div>
+				<!-- SERVER STUFF TAB -->
+				<div class="tab-pane fade" id="nav-server-stuff" role="tabpanel" aria-labelledby="nav-server-stuff-tab">
+					<a href="http://unraid.markhome.xyz">Unraid Dashboard</a> <br>
+					<hr style="border-top: 1px solid #000000" />
+					<a href="http://jollyroger.markhome.xyz:8085">SABnzbd (Usenet client)</a> <br>
+					<a href="http://jollyroger.markhome.xyz:8080">Deluge (Torrent client)</a> <br>
+					<hr style="border-top: 1px solid #000000" />
+					<a href="http://pfsense.markhome.xyz:7878">PFSense (TODO)</a> <br>
+					<hr style="border-top: 1px solid #000000" />
+					<a href="http://unraid.markhome.xyz:8880">DokuWiki</a> <br>
+				</div>
+				<!-- CONTACT TAB -->
+				<div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+					Message me on Line if something goes wrong!
+				</div>
+			</div>
+		</h1>
 	</div>
 </body>
+
+
+<footer class="page-footer font-small blue pt-4">
+	<div class="container-fluid text-center text-md-left">
+		<div class="row">
+			<div class="col-md-6 mt-md-0 mt-3">
+				<h5 class="text-uppercase">Edited by Jeff</h5>
+				v2.0.4
+			</div>
+		</div>
+	</div>
+</footer>
