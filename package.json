@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/saporous/markhomewebsite/issues"
   },
-  "homepage": "https://github.com/saporous/markhomewebsite#readme"
+  "homepage": "https://github.com/saporous/markhomewebsite#readme",
+  "dependencies": {
+    "@forevolve/bootstrap-dark": "^1.0.0"
+  }
 }
