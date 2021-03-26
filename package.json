@@ -1,0 +1,19 @@
+{
+  "name": "markhomewebsite",
+  "version": "2.0.5",
+  "description": "View the site at https://saporous.github.io/MarkHomeWebsite/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saporous/markhomewebsite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saporous/markhomewebsite/issues"
+  },
+  "homepage": "https://github.com/saporous/markhomewebsite#readme"
+}
