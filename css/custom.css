@@ -1,0 +1,9 @@
+a {
+    color:#4c9ae2
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    color:#2686e0;
+}
+.nav-link {
+    color:#d0d8e0;
+}
